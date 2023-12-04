@@ -82,7 +82,7 @@ function TrainingList() {
    <div> <h1>Traininglist</h1>
     <div className="ag-theme-material" style={{ height: "calc(100vh - 40px)", width: '100vw', display: 'flex', flexDirection: 'column' }}>
       <div style={{ marginBottom: '10px', alignSelf: 'flex-end' }}>
-        <Button component={Link} to="/" variant="outlined" color="error">
+        <Button component={Link} to="/FrontDeployment" variant="outlined" color="error">
           Customer List
         </Button>
         <Button component={Link} to="/calendar" variant="outlined" color="error" style={{ marginLeft: '10px' }}>

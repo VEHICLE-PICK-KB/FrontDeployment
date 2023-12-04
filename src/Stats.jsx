@@ -45,7 +45,7 @@ const StatisticsPage = () => {
   return (
     <div style={{ height: '90vh', width: '100vw', display: 'flex', flexDirection: 'column' }}>
       <div style={{ alignSelf: 'flex-end', marginRight: '20px', marginBottom: '20px' }}>
-        <Button component={Link} to="/" variant="outlined" color="error" style={{ marginLeft: '20px' }}>
+        <Button component={Link} to="/FrontDeployment" variant="outlined" color="error" style={{ marginLeft: '20px' }}>
           Customer List
         </Button>
         <Button component={Link} to="/trainings" variant="outlined" color="error" style={{ marginLeft: '20px' }}>
