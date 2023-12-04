@@ -52,10 +52,10 @@ const TrainingCalendar = () => {
         <Button component={Link} to="/FrontDeployment" variant="outlined" color="error" style={{ marginLeft: '20px' }}>
           Customer List
         </Button>
-        <Button component={Link} to="/trainings" variant="outlined" color="error" style={{ marginLeft: '20px' }}>
+        <Button component={Link} to="/FrontDeployment/trainings" variant="outlined" color="error" style={{ marginLeft: '20px' }}>
           Training List
         </Button>
-        <Button component={Link} to="/statistics" variant="outlined" color="error" style={{ marginLeft: '20px' }}>
+        <Button component={Link} to="/FrontDeployment/statistics" variant="outlined" color="error" style={{ marginLeft: '20px' }}>
           Statistics
         </Button>
       </div>

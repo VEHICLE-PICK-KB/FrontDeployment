@@ -33,7 +33,8 @@ function EditCustomer({ fetchCustomers, data }) {
   };
 
   const saveCustomer = () => {
-    fetch(customer.link, {
+    const updatedLink = customer.link.replace("http://", "https://");
+    fetch(updatedLink, {
       method: 'PUT',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({

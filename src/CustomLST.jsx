@@ -52,8 +52,9 @@ function CustomerList() {
   };
 
   const deleteCustomer = (url) => {
+    const updatedLink = url.replace("http://", "https://");
     if (window.confirm("Are you sure you want to delete this customer?")) {
-      fetch(url, { method: "DELETE" })
+      fetch(updatedLink, { method: "DELETE" })
         .then((response) => {
           if (response.ok) fetchCustomers();
           else throw new Error("Error in DELETE: " + response.statusText);
@@ -96,13 +97,13 @@ function CustomerList() {
     <div> <h1>Customers</h1>
     <div className="ag-theme-material" style={{ height: "100vh", width: "100vw", display: "flex", flexDirection: "column" }}>
       <div style={{ marginBottom: "16px", alignSelf: "flex-end" }}>
-        <Button component={Link} to="/trainings" variant="outlined" color="error">
+        <Button component={Link} to="/FrontDeployment/trainings" variant="outlined" color="error">
         Training List
         </Button>
-        <Button component={Link} to="/calendar" variant="outlined" color="error" style={{ marginLeft: '18px', marginRight: "11px" }}>
+        <Button component={Link} to="/FrontDeployment/calendar" variant="outlined" color="error" style={{ marginLeft: '18px', marginRight: "11px" }}>
         Calendar
         </Button>
-        <Button component={Link} to="/statistics" variant="outlined" color="error" style={{ marginLeft: '10px' }}>
+        <Button component={Link} to="/FrontDeployment/statistics" variant="outlined" color="error" style={{ marginLeft: '10px' }}>
           Statistics
         </Button>
       </div>

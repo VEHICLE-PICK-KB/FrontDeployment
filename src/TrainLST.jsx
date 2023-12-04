@@ -85,10 +85,10 @@ function TrainingList() {
         <Button component={Link} to="/FrontDeployment" variant="outlined" color="error">
           Customer List
         </Button>
-        <Button component={Link} to="/calendar" variant="outlined" color="error" style={{ marginLeft: '10px' }}>
+        <Button component={Link} to="/FrontDeployment/calendar" variant="outlined" color="error" style={{ marginLeft: '10px' }}>
           Calendar
         </Button>
-        <Button component={Link} to="/statistics" variant="outlined" color="error" style={{ marginLeft: '10px' }}>
+        <Button component={Link} to="/FrontDeployment/statistics" variant="outlined" color="error" style={{ marginLeft: '10px' }}>
           Statistics
         </Button>
       </div>
