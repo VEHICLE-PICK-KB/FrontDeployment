@@ -42,7 +42,7 @@ function CustomerList() {
   ]);
 
   const fetchCustomers = () => {
-    fetch("http://traineeapp.azurewebsites.net/api/customers")
+    fetch("https://traineeapp.azurewebsites.net/api/customers")
       .then((response) => {
         if (response.ok) return response.json();
         else throw new Error("Error in fetch:" + response.statusText);
