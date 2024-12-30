@@ -1,2 +1,2 @@
 # Personal trainer app
-Practice project with React.
+PT practice project with React.
